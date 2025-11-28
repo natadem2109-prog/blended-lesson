@@ -4,52 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WatchCharm</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css />
   </head>
   <body>
-    <header>
-      <a href="./index.html">watchcharm</a>
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Catalog</a></li>
-          <li><a href="">Sale</a></li>
-          <li><a href="">Reviews</a></li>
-          <li><a href="">Contact Us</a></li>
+    <header class="header">
+      <div class="container header-container">
+        <a class="header-logo" href="./index.html">watchcharm</a>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a class="header-nav-link current" href="">Home</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">About Us</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">Catalog</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">Sale</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">Reviews</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-social-list">
+          <li class="header-social-item">
+            <a class="header-social-link" href="">
+              <svg width="20" height="20" class="header-social-icon">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-social-item">
+            <a class="header-social-link" href="">
+              <svg width="20" height="20" class="header-social-icon">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-social-item">
+            <a class="header-social-link" href="">
+              <svg width="20" height="20" class="header-social-icon">
+                <use href="./images/icons.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
-      </nav>
-      <ul>
-        <li>
-          <a href="">
-            <img
-              src="./images/facebook.svg"
-              alt="facebook"
-              width="36"
-              height="36"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img
-              src="./images/instagram.svg"
-              alt="instagram"
-              width="36"
-              height="36"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img
-              src="./images/youtube.svg"
-              alt="youtube"
-              width="36"
-              height="36"
-            />
-          </a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <main>
@@ -197,11 +210,10 @@
             </form>
           </div>
           <img
-            src="./images/watchcontact.jpg"
+            src="./images/Rectangle 11.jpg"
             alt="picture of watch"
             width="530"
             height="556"
-          />
           />
         </div>
       </section>
