@@ -366,6 +366,17 @@ img {
   text-align: center;
 }
 /*test*/
+.feedbacks-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.feedbacks-item {
+  width: 100%;
+}
 .feedbacks-title {
   font-weight: 700;
   font-size: 36px;
@@ -373,4 +384,34 @@ img {
   letter-spacing: 0.01em;
   text-align: center;
   color: #030a06;
+}
+.stars {
+  display: flex;
+  gap: 4px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.star-filled svg {
+  fill: #3ac04c;
+}
+
+.star-empty svg {
+  fill: #dcdcdc;
+}
+@media screen and (min-width: 768px) {
+  .feedbacks-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .feedbacks-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .feedbacks-item {
+    width: calc((100% - 24px * 3) / 4);
+  }
 }
