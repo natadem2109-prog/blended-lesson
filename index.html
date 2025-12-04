@@ -11,9 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!--header-->
     <header class="header">
       <div class="container header-container">
         <a class="header-logo" href="./index.html">watchcharm</a>
@@ -43,21 +44,21 @@
           <li class="header-social-item">
             <a class="header-social-link" href="">
               <svg width="20" height="20" class="header-social-icon">
-                <use href="./images/icons.svg#icon-facebook"></use>
+                <use href="./images/icons/icons.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="header-social-item">
             <a class="header-social-link" href="">
               <svg width="20" height="20" class="header-social-icon">
-                <use href="./images/icons.svg#icon-instagram"></use>
+                <use href="./images/icons/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="header-social-item">
             <a class="header-social-link" href="">
               <svg width="20" height="20" class="header-social-icon">
-                <use href="./images/icons.svg#icon-youtube"></use>
+                <use href="./images/icons/icons.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
@@ -66,22 +67,36 @@
     </header>
 
     <main>
-      <section>
-        <h1>Welcome to our collection of premium watches</h1>
-        <p>
-          Our watches are not just timepieces, but also an expression of your
-          personality and lifestyle. From classic designs to modern ones, we
-          have a watch to suit every taste and occasion.
-        </p>
-        <img
-          src="./images/people.png"
-          alt="personality"
-          width="146"
-          height="60"
-        />
-        <a href="">Scroll down</a>
-        <img src="./images/clock.png" alt="clock" width="1150" height="500" />
+      <!--hero-->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-wrapper">
+            <div class="hero-content">
+              <h1 class="hero-title">
+                Welcome to our
+                <span class="hero-accent">collection</span>
+                of premium watches
+              </h1>
+              <p class="hero-text">
+                Our watches are not just timepieces, but also an expression of
+                your personality and lifestyle. From classic designs to modern
+                ones, we have a watch to suit every taste and occasion.
+              </p>
+            </div>
+            <div class="hero-actions">
+              <img
+                src="./images/people.png"
+                alt="personality"
+                width="146"
+                height="60"
+              />
+              <a class="hero-link" href="#">Scroll down</a>
+            </div>
+          </div>
+          <img src="./images/clock.png" alt="clock" width="1150" height="500" />
+        </div>
       </section>
+      <!--about us-->
       <section>
         <h2>About Us</h2>
         <p>
@@ -103,6 +118,7 @@
           height="532"
         />
       </section>
+      <!--catalog-->
       <section>
         <h2>Catalog</h2>
         <ul>
@@ -110,6 +126,8 @@
             <img
               src="./images/catalog/image (4).png"
               alt="Garmin Fenix 7X Pro Sapphire Solar"
+              width="292px"
+              height="292px"
             />
             <h3>Garmin Fenix 7X Pro Sapphire Solar</h3>
             <p>€500</p>
@@ -118,6 +136,8 @@
             <img
               src="./images/catalog/image (5).png"
               alt="Garmin Marq Athlete"
+              width="292px"
+              height="292px"
             />
             <h3>Garmin Marq Athlete</h3>
             <p>€450</p>
@@ -126,6 +146,8 @@
             <img
               src="./images/catalog/image (6).png"
               alt="Garmin Descent MK1"
+              width="292px"
+              height="292px"
             />
             <h3>Garmin Descent MK1</h3>
             <p>€680</p>
@@ -134,6 +156,8 @@
             <img
               src="./images/catalog/image (7).png"
               alt="Garmin D2 Delta PX"
+              width="292px"
+              height="292px"
             />
             <h3>Garmin D2 Delta PX</h3>
             <p>€380</p>
@@ -142,6 +166,8 @@
             <img
               src="./images/catalog/image (8).png"
               alt="Garmin Fenix 6 Pro Solar"
+              width="292px"
+              height="292px"
             />
             <h3>Garmin Fenix 6 Pro Solar</h3>
             <p>€400</p>
@@ -150,6 +176,8 @@
             <img
               src="./images/catalog/image (9).png"
               alt="Tube Watch S42 Date Steel With Black Case"
+              width="292px"
+              height="292px"
             />
             <h3>Tube Watch S42 Date Steel With Black Case</h3>
             <p>€395</p>
@@ -157,26 +185,103 @@
         </ul>
       </section>
       <section>
-        <h2>
-          Choose your story, making every moment unique. Time is your style, and
-          we reveal it.
-        </h2>
-        <button type="button">Contact Us</button>
+        <!--story-->
+        <div class="container">
+          <h2 hidden>Story</h2>
+          <div class="chs-ur-story">
+            <p class="paragraphs chs-ur-story-txt">
+              Choose
+              <span class="ur-story">your story</span>
+              , making every moment unique. Time is your style, and we reveal
+              it.
+            </p>
+            <a class="footer-link story-link" href="#">Contact Us</a>
+          </div>
+        </div>
       </section>
       <section>
+        <!--sale-->
         <h2>Sale</h2>
+        <div class="sale-products">
+          <ul class="sale-products-list">
+            <li class="sale-product-item">
+              <img
+                src="./images/sale/sale-img-1.png"
+                alt="picture of watch"
+                width="96"
+                height="100"
+              />
+            </li>
+            <li class="sale-product-item">
+              <img
+                src="./images/sale/sale-img-2.png"
+                alt="picture of watch"
+                width="96"
+                height="100"
+              />
+            </li>
+            <li class="sale-product-item">
+              <img
+                src="./images/sale/sale-img-3.png"
+                alt="picture of watch"
+                width="96"
+                height="100"
+              />
+            </li>
+            <li class="sale-product-item">
+              <img
+                src="./images/sale/sale-img-4.png"
+                alt="picture of watch"
+                width="96"
+                height="100"
+              />
+            </li>
+            <li class="sale-product-item">
+              <img
+                src="./images/sale/sale-img-5.png"
+                alt="picture of watch"
+                width="328"
+                height="398"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="sale-info">
+          <h3>MARQ&reg; Commander (Gen 2) - Carbon Edition</h3>
+          <p>Product tag: 706587</p>
+          <h4>€1500</h4>
+          <p>€3000</p>
+          <p>
+            The Garmin MARQ Commander Gen 2 Carbon Edition is a modern
+            smartwatch for adventurers that takes materials and features to the
+            next level. The body of the watch is made of very durable Fused
+            Carbon Fiber material and has a precise AMOLED touch screen. The
+            sensitive touch screen is complemented by buttons that can be used
+            in any conditions.
+          </p>
+          <ul class="sale-watch-features">
+            <li class="feature-item">Fused carbon fiber</li>
+            <li class="feature-item">Grade-5 Titanuim</li>
+            <li class="feature-item">Athlete</li>
+            <li class="feature-item">Golfer</li>
+            <li class="feature-item">Commander</li>
+            <li class="feature-item">Adventurer</li>
+          </ul>
+        </div>
       </section>
+      <!--contact us-->
       <section>
         <div class="container contact-container">
           <h2 class="heading-two">Contact Us</h2>
           <div class="wrapper-base contact-form">
-            <p class="paragraphs">
+            <p class="contact-paragraphs">
               Please use the form below to contact us. Enter your name, email,
               phone, and message and we'll get back to you shortly.
             </p>
             <form>
               <label for="username">
                 <input
+                  class="contact-input-label"
                   type="text"
                   id="username"
                   name="username"
@@ -185,6 +290,7 @@
               </label>
               <label for="usermail">
                 <input
+                  class="contact-input-label"
                   type="email"
                   id="usermail"
                   name="usermail"
@@ -193,6 +299,7 @@
               </label>
               <label for="usertel">
                 <input
+                  class="contact-input-label"
                   type="tel"
                   id="usertel"
                   name="usertel"
@@ -201,12 +308,13 @@
               </label>
               <label for="usercomment">
                 <textarea
+                  class="contact-textarea-label"
                   id="usercomment"
                   name="usercomment"
                   placeholder="Comment"
                 ></textarea>
               </label>
-              <button class="button-catalog" type="submit">Send</button>
+              <button class="contact-button-submit" type="submit">Send</button>
             </form>
           </div>
           <img
@@ -217,8 +325,203 @@
           />
         </div>
       </section>
+      <!--reviews-->
+      <section class="reviews">
+        <div class="container">
+          <h2 class="reviews-title">Reviews</h2>
+          <ul class="reviews-list">
+            <li class="reviews-item">
+              <img
+                class="reviews-item-img"
+                src="./images/reviews/john-wax.png"
+                alt="John Wax"
+                width="56"
+                height="56"
+              />
+              <h3 class="reviews-item-title">John Wax</h3>
+              <p class="reviews-item-desc">
+                Buying a watch from was the best choice for me. The design is
+                perfectly combined with high quality materials. The strap fits
+                nicely on the hand, and the mechanism works flawlessly.
+              </p>
+            </li>
+            <li class="reviews-item">
+              <img
+                class="reviews-item-img"
+                src="./images/reviews/victoria-romashenko.png"
+                alt="Victoria Romashenko"
+                width="56"
+                height="56"
+              />
+              <h3 class="reviews-item-title">Victoria Romashenko</h3>
+              <p class="reviews-item-desc">
+                Can't take my eyes off my watch from. Every time I put it on, it
+                is admired by those around me. The build quality and attention
+                to detail make it a real gem among my accessories.
+              </p>
+            </li>
+            <li class="reviews-item">
+              <img
+                class="reviews-item-img"
+                src="./images/reviews/anastasia-trachuk.png"
+                alt="Anastasia Trachuk"
+                width="56"
+                height="56"
+              />
+              <h3 class="reviews-item-title">Anastasia Trachuk</h3>
+              <p class="reviews-item-desc">
+                My watch from is a real masterpiece. Every detail impresses with
+                the high quality of execution. Special features like [specify
+                features] make it an indispensable companion in my daily life.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--test-->
+      <section class="feedbacks">
+        <h2 class="feedbacks-title">Що говорять наші клієнти</h2>
+        <ul class="feedbacks-list">
+          <li class="feedbacks-item">
+            <ul class="stars">
+              <li class="star-filled">
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-icon-green"></use>
+                </svg>
+              </li>
+              <li class="star-filled">
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-icon-green"></use>
+                </svg>
+              </li>
+              <li class="star-filled">
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-icon-green"></use>
+                </svg>
+              </li>
+              <li class="star-filled">
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-icon-green"></use>
+                </svg>
+              </li>
+              <li class="star-filled">
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-icon-green"></use>
+                </svg>
+                <p class="feedbacks-text">
+                  Сумка дуже зручна та стильна, використовую щодня!
+                </p>
+                <p class="feedbacks-author">Анна</p>
+              </li>
+            </ul>
+          </li>
+          <li class="feedbacks-item">
+            <ul class="stars">
+              <li class="star-filled">
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-icon-green"></use>
+                </svg>
+              </li>
+              <li class="star-filled">
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-icon-green"></use>
+                </svg>
+              </li>
+              <li class="star-filled">
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-icon-green"></use>
+                </svg>
+              </li>
+              <li class="star-filled">
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-icon-green"></use>
+                </svg>
+              </li>
+              <li class="star-filled">
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-icon-green"></use>
+                </svg>
+                <p class="feedbacks-text">
+                  Відмінна якість матеріалів, приємно здивована.
+                </p>
+                <p class="feedbacks-author">Ігор</p>
+              </li>
+            </ul>
+          </li>
+          <li class="feedbacks-item">
+            <ul class="stars">
+              <li class="star-filled">
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-icon-green"></use>
+                </svg>
+              </li>
+              <li class="star-filled">
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-icon-green"></use>
+                </svg>
+              </li>
+              <li class="star-filled">
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-icon-green"></use>
+                </svg>
+              </li>
+              <li class="star-filled">
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-icon-green"></use>
+                </svg>
+              </li>
+              <li class="star-filled">
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-icon-green"></use>
+                </svg>
+                <p class="feedbacks-text">
+                  Сумка повністю відповідає опису, рекомендую!
+                </p>
+                <p class="feedbacks-author">Олена</p>
+              </li>
+            </ul>
+          </li>
+          <li class="feedbacks-item">
+            <ul class="stars">
+              <li class="star-filled">
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-icon-green"></use>
+                </svg>
+              </li>
+              <li class="star-filled">
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-icon-green"></use>
+                </svg>
+              </li>
+              <li class="star-filled">
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-icon-green"></use>
+                </svg>
+              </li>
+              <li class="star-filled">
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-icon-green"></use>
+                </svg>
+              </li>
+              <li class="star-empty">
+                <svg width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-icon-green"></use>
+                </svg>
+                <p class="feedbacks-text">
+                  Швидка доставка та гарне обслуговування.
+                </p>
+                <p class="feedbacks-author">Сергій</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer></footer>
   </body>
 </html>
+
+<svg class="social-icon" width="16" height="16">
+  <use href="./images/icons.svg#icon-linkedin-1"></use>
+</svg>
